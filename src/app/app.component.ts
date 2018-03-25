@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { Contact }    from './contact';
-import {ContactService} from './contact.service';
-import { Http }          from '@angular/http';
+// import {ContactService} from './contact.service';
+// import { Http }          from '@angular/http';
 
 @Component({
   selector: 'my-app',
@@ -9,10 +9,11 @@ import { Http }          from '@angular/http';
 })
 
 export class AppComponent  {
-    http  = Http
+    // http  = Http
     model = new Contact('', '', '');
     send(){
-      let service = new ContactService();
-      service.send(this.model);
+        console.log('here');
+      // let service = new ContactService();
+      // service.send(this.model);
   }
 }
